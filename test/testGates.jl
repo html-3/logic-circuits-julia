@@ -4,7 +4,7 @@ include("../source/gates.jl")
 
 using Main
 
-@testset "Gates tests" begin
+@testset "Gate tests" begin
   a = BitArray([0])
   b = BitArray([1])
 
