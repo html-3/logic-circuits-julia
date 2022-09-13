@@ -44,7 +44,7 @@ end
   |  1   | 1 | 0 |   1   | 0 |
   |  1   | 1 | 1 |   1   | 1 |
 """
-function ADD(x::BitVector, y::BitVector)
+function ADD(x::BitVector, y::BitVector, c::BitVector)
   z = XOR(x,y)
   s = XOR(z,c)
   c = OR(AND(x,y),AND(z,c))
