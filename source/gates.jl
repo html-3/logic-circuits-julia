@@ -1,5 +1,7 @@
-# Gate NOT
-"""
+"""NOT Gate
+  
+  ----
+
   Truth table
   | x | !x|
   |:-:|:-:|
@@ -10,8 +12,10 @@ function NOT(x::BitVector)
   return .!x
 end
 
-# Gate AND
-"""
+"""AND Gate
+
+  ----
+
   Truth table
   | x | y | y ∙ x |
   |:-:|:-:| :---: |
@@ -24,8 +28,10 @@ function AND(x::BitVector, y::BitVector)
   return x .& y
 end
 
-# Gate OR
-"""
+"""OR Gate
+
+  ----
+
   Truth table
   | x | y | y + x |
   |:-:|:-:| :---: |
@@ -38,8 +44,10 @@ function OR(x::BitVector, y::BitVector)
   return x .| y
 end
 
-# Gate XOR
-"""
+"""XOR Gate
+
+  ---- 
+
   Truth table
   | x | y | y ⊕ x |
   |:-:|:-:| :---: |
